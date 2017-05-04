@@ -1,0 +1,82 @@
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin: auto;
+	}
+
+td, th {
+    text-align: left;
+    padding: 15px;
+	}
+
+th {
+    background-color: #34495e;
+    color: #fff;
+}
+	
+tr:nth-child(even) {
+	background-color: #ecf0f1
+	}
+	
+h1 {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 150%;
+	color: #34495e;
+	
+}
+h2 {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #34495e;
+}
+
+.addDialog {
+    position: fixed;
+	text-align: center;
+    font-family: sans-serif;
+    color: #34495e;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    opacity:0;
+    -webkit-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;    
+    pointer-events: none;
+}
+#link {
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #34495e;
+	padding: 10px;
+}
+
+a:link {
+    text-align: center;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #34495e;
+}
+a:visited {
+    color: #34495e;
+}
+
+.addDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.addDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
